@@ -1,0 +1,53 @@
+.logoscrl-sec h5 {
+		font-size: 17px;
+		text-align: center;
+}
+.logo-carousel {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 20px;
+}
+.logo-track {
+	display: flex;
+	width: max-content;
+}
+.single-logo {
+	flex: 0 0 auto;
+	padding: 0 10px;
+}
+.single-logo img {
+	height: 60px;
+	display: block;
+}
+.logoscrl-sec {
+		padding: 30px 0;
+}
+/* Top row scrolls right */
+.scroll-right .logo-track {
+	animation: scrollRight 20s linear infinite;
+}
+@keyframes scrollRight {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(-50%); }
+}
+
+/* Bottom row scrolls left */
+.scroll-left .logo-track {
+	animation: scrollLeft 20s linear infinite;
+}
+@keyframes scrollLeft {
+	0% { transform: translateX(-50%); }
+	100% { transform: translateX(0); }
+}
+
+/* Keyframes */
+@keyframes scrollLeft {
+	0% { transform: translateX(0%); }
+	100% { transform: translateX(-50%); }
+}
+
+@keyframes scrollRight {
+	0% { transform: translateX(-50%); }
+	100% { transform: translateX(0%); }
+}
