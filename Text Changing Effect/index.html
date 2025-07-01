@@ -1,0 +1,39 @@
+<h2>The one place to<span id="changeText" class="fade-slide">make money</span></h2>
+
+
+<!-- styles.css -->
+<style>
+.fade-slide {
+	display: inline-block;
+	transition: opacity 0.7s ease, transform 0.7s ease;
+	opacity: 1;
+	transform: translateX(0);
+}
+.fade-slide.out {
+	opacity: 0;
+	transform: translateX(50px);
+}
+</style>
+
+
+<!-- scripts.js -->
+<script>
+		const names = ["make money", "execute in retail"];
+		let index = 0;
+		const textEl = document.getElementById("changeText");
+
+		// Set initial text
+		textEl.textContent = names[index];
+
+		setInterval(() => {
+			// Trigger fade-out and slide
+			textEl.classList.add("out");
+
+			// After fade-out ends (500ms), change the text and fade-in
+			setTimeout(() => {
+				index = (index + 1) % names.length;
+				textEl.textContent = names[index];
+				textEl.classList.remove("out"); // triggers fade-in and slide-in
+			}, 700); // duration must match CSS transition
+		}, 3000);
+</script>
