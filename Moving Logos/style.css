@@ -1,12 +1,22 @@
-.logoscrl-sec h5 {
-		font-size: 17px;
-		text-align: center;
-}
 .logo-carousel {
 	width: 100%;
 	overflow: hidden;
 	position: relative;
 	margin-bottom: 20px;
+}
+.single-logo {
+    text-align: center;
+    margin: 10px 10px;
+    width: calc(20% - 20px);
+    flex: 0 0 auto;
+    padding: 0 10px;
+}
+.single-logo img {
+    max-width: 130px;
+    width: 100%;
+    margin: 0px auto;
+    display: block;
+    height: 60px;
 }
 .logo-track {
 	display: flex;
@@ -19,9 +29,6 @@
 .single-logo img {
 	height: 60px;
 	display: block;
-}
-.logoscrl-sec {
-		padding: 30px 0;
 }
 /* Top row scrolls right */
 .scroll-right .logo-track {
