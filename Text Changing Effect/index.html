@@ -13,27 +13,42 @@
 	opacity: 0;
 	transform: translateX(50px);
 }
+
+/* updated */
+	.fade-slide {
+	display: inline-block;
+	opacity: 0;
+	transform: translateX(-30px);
+	transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-slide.show {
+	opacity: 1;
+	transform: translateX(0);
+}
+
 </style>
 
 
 <!-- scripts.js -->
-<script>
-		const names = ["make money", "execute in retail"];
-		let index = 0;
-		const textEl = document.getElementById("changeText");
+ <script>
+					 const phrases = ["make money", "execute in retail"];
+					 let index = 0;
+					 const textEl = document.getElementById("changeText");
 
-		// Set initial text
-		textEl.textContent = names[index];
+					 function changeText() {
+						 textEl.classList.remove("show");
 
-		setInterval(() => {
-			// Trigger fade-out and slide
-			textEl.classList.add("out");
+						 setTimeout(() => {
+							 index = (index + 1) % phrases.length;
+							 textEl.textContent = phrases[index];
+							 textEl.classList.add("show");
+						 }, 800); // should match CSS transition duration
+					 }
 
-			// After fade-out ends (500ms), change the text and fade-in
-			setTimeout(() => {
-				index = (index + 1) % names.length;
-				textEl.textContent = names[index];
-				textEl.classList.remove("out"); // triggers fade-in and slide-in
-			}, 700); // duration must match CSS transition
-		}, 3000);
-</script>
+					 // Initial appearance
+					 textEl.classList.add("show");
+
+					 // Repeat every 3 seconds
+					 setInterval(changeText, 3000);
+				 </script>
