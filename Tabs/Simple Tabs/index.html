@@ -1,0 +1,239 @@
+// Simple tabs in Desktop version and Accordion in Mobile version
+
+
+//HTML code
+<div class="tabs-accordion-container">
+  <div class="tabs">
+      <div class="tab active">DETAILS</div>
+      <div class="tab">SERVICE INCLUDES</div>
+      <div class="tab">ENHANCEMENTS</div>
+		  <div class="tab">TESTIMONIALS</div>
+  </div>
+  <div class="accordion">
+     <div class="accordion-item">
+       <div class="accordion-header active">DETAILS</div>
+       <div class="accordion-content">
+          <ul>
+          		<li>Artisan picnic table, including a tablecloth, placemats, fresh flowers, comfortable seat cushions, and a professionally designed tablescape</li>
+              <li>Food & beverages, including a pastry tower for 2, gifted champagne and glasses, ice and ice bucket, and bottled water</li>
+              <li>Decor, including high-quality 8 ft. teepee, handcrafted blankets and pillows, outdoor rug, and seasonal vases</li>
+              <li>A/V including a Bluetooth speaker</li>
+           </ul>
+           <ul>
+              <li><b>Starts at $800</b></li>
+           </ul>
+		  </div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-header">SERVICE INCLUDES</div>
+        <div class="accordion-content">
+			    <ul>
+            <li>Professional proposal photography</li>
+            <li>Coordination turnaround of 1 week</li>
+            <li>Assistance with location scouting and selection</li>
+            <li>Set-up & clean-up</li>
+            <li>Itinerary, including a parking plan</li>
+            <li>Premium customer service, including regular updates via email, assistance with cover-up plans, and installation of special request(s)</li>
+            <li>15-minute proposal meeting and day-before proposal prep</li>
+            <li>Expert proposal tips</li>
+          </ul>
+			  </div>
+      </div>
+      <div class="accordion-item">
+         <div class="accordion-header">ENHANCEMENTS</div>
+         <div class="accordion-content">
+	         <p>You can enhance your proposal experience with additional services, such as:</p>
+            <ul>
+              <li>Live Music – Guitarist or Violinist</li>
+              <li>Premium Floral Arrangements </li>
+              <li>“Marry Me” Marquee Letters </li>
+              <li>Charcuterie Board</li>
+              <li>Framed Photos</li>
+              <li>Premium Umbrella</li>
+          </ul>
+        </div>
+      </div>
+		  <div class="accordion-item">
+          <div class="accordion-header">TESTIMONIALS</div>
+          <div class="accordion-content">
+              <p><img src="https://themextar.net/wp-content/uploads/2023/10/IMG_6609.jpeg" style="width: 360px; box-shadow: 0px 4px 34px #3333332e; border-radius: 10px;"></p>
+              <p><img src="https://themextar.net/wp-content/uploads/2023/09/IMG_9352.jpg" style="width: 360px; box-shadow: 0px 4px 34px #3333332e; border-radius: 10px;"></p>
+              <p><img src="https://themextar.net/wp-content/uploads/2023/10/IMG_6610.jpeg" style="width: 360px; box-shadow: 0px 4px 34px #3333332e; border-radius: 10px;"></p>
+
+          </div>
+      </div>
+  </div>
+</div>
+
+
+// CSS code
+<style>
+/* Style for Desktop Tab */
+.tabs .tab, .accordion-header {
+    cursor: pointer;
+    padding: 20px 25px;
+    border: solid transparent;
+    flex: 1;
+    font-weight: 700;
+    line-height: 1;
+    border-width: 1px;
+    font-family: "Oswald", Sans-serif;
+    font-size: 18px;
+    color: #2C3C3D;
+    display: table-cell;
+}
+.tabs .tab.active{
+   border-bottom-style: none;
+  border-color: #811F20;
+  color: #811F20;
+  position: relative;
+}
+.accordion-header {
+    display: block;
+}
+.tabs .tab.active::before {
+    right: 100%;
+    bottom: -2px;
+    height: 0;
+    width: 999em;
+    border-bottom-style: solid;
+    position: absolute;
+    content: "";
+    color: #fff;
+  border-color: #811f20;
+}
+.tabs .tab.active::after {
+    left: 100%;
+    bottom: -2px;
+    height: 0;
+    width: 999em;
+    border-bottom-style: solid;
+    position: absolute;
+    content: "";
+    color: #fff;
+    border-color: #811f20;
+}
+.tabs {
+    overflow: hidden;
+}
+/* Styles for accordion Mobile */
+.accordion {
+    display: none;
+}
+.accordion-header {
+    display: block;
+    border-color: #811F20;
+    border-top: transparent;
+    padding: 10px;
+    line-height: 1.7;
+    position: relative;
+}
+.accordion-header::after {
+    content: "+";
+    float: right;
+    font-size: 20px;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}
+.accordion .accordion-item:first-child .accordion-header {
+    border: 1px solid #811F20;
+}
+.accordion-content {
+    color: #2C3C3D;
+    font-family: "Chivo", Sans-serif;
+    font-size: 16px;
+    border: 1px solid #811F20;
+    padding: 20px;
+    display: none;
+    border-top: 0;
+    line-height: 1.7;
+}
+.accordion-content ul {
+    margin: 0 0 10px;
+}
+.accordion-content p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+.accordion-content img {
+    height: auto;
+    max-width: 100%;
+    border: none;
+}
+@media screen and (min-width: 768px){
+.accordion-content.active {
+    display: block;
+}
+.accordion-header.active {
+    color: #811F1F;
+}
+}
+@media screen and (max-width: 767px){
+.accordion-content {
+    padding: 10px;
+}
+}
+</style>
+
+
+//Script code
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function($) {
+    // Check screen width and initialize tabs or accordion
+    function checkWidth() {
+        const screenWidth = $(window).width();
+        if (screenWidth < 768) {
+            // Activate accordion
+            $('.tabs').hide();
+            $('.accordion').show();
+        } else {
+            // Activate tabs
+            $('.tabs').show();
+            $('.accordion').show(); // Show accordion container on desktop
+            $('.accordion-header').hide(); // Hide accordion headers on desktop
+            $('.accordion-item.active .accordion-content').show(); // Show active accordion content on desktop
+        }
+    }
+
+    // Initial check on page load
+    checkWidth();
+
+    // Display the first accordion-content as active on page load
+    $('.accordion-item:first-child .accordion-content').addClass('active').show();
+
+    // Check on window resize
+    $(window).resize(function () {
+        checkWidth();
+    });
+
+    // Toggle accordion items for mobile
+    $('.accordion-header').click(function () {
+        const $accordionItem = $(this).closest('.accordion-item');
+        if ($accordionItem.hasClass('active')) {
+            // Close the currently open accordion item
+            $accordionItem.removeClass('active');
+            $accordionItem.find('.accordion-content').slideUp().removeClass('active'); // Remove active class from accordion-content
+        } else {
+            // Close all other accordion items and open the clicked one
+            $('.accordion-item').removeClass('active');
+            $('.accordion-content').slideUp().removeClass('active'); // Remove active class from accordion-content
+            $accordionItem.addClass('active');
+            $accordionItem.find('.accordion-content').slideDown().addClass('active'); // Add active class to accordion-content
+        }
+    });
+
+    // Toggle tabs for desktop
+    $('.tab').click(function () {
+        const tabIndex = $(this).index();
+        $('.tab').removeClass('active');
+        $(this).addClass('active');
+        
+        // Hide all accordion content except the one corresponding to the selected tab
+        $('.accordion-content').hide().removeClass('active'); // Remove active class from accordion-content
+        $('.accordion-item:eq(' + tabIndex + ') .accordion-content').show().addClass('active'); // Add active class to accordion-content
+    });
+});
+</script>
+
