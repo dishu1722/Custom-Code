@@ -1,0 +1,1207 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body ,p {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+	font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 30px;
+color: #785F64;
+}
+
+button,
+input,
+textarea {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+select {
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*** typo css ***/
+
+h1 {
+    font-size: 54px;
+	color: #513239;
+    font-family: 'Roboto', sans-serif;
+	margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 54px;
+	color: #513239;
+    font-family: 'Roboto', sans-serif;
+	margin-bottom: 10px;
+    font-weight: 400;
+}
+h3 {
+    font-size: 38px;
+	color: #513239;
+    font-family: 'Roboto', sans-serif;
+	margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 28px;
+	color: #513239;
+   font-family: 'Roboto', sans-serif;
+   margin-bottom: 10px;
+}
+
+h5 {
+    font-size: 24px;
+	color: #513239;
+    font-family: 'Roboto', sans-serif;
+	margin-bottom: 10px;
+}
+.container-header {
+    max-width: 1680px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.container {
+    max-width: 1560px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/******* Header css start ********/
+.top-bar {
+    background: #513239;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align:center;
+    letter-spacing: 0.1em;
+    padding: 10px 0;
+}
+
+header .navbar-light .navbar-nav .nav-link {
+    font-weight: 500;
+    color: #412F32 !important;
+}
+.myaccount a {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    color: #412F32;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+.btn.shape-btn {
+    padding: 0 40px;
+}
+
+header .navbar-logo {
+    width: 150px;
+}
+
+header .navbar-logo-link {
+    top: -27px;
+    padding-top: 0;
+}
+
+header .nav-item {
+    padding: 31px 20px;
+}
+.d-flex.nav-right-btn li {
+    padding: 18px 24px;
+    display: inline-block;
+}
+
+/******* Header css end ********/
+
+
+/******* Banner css start ********/
+.banner-main {
+    padding: 135px 0;
+    max-height: 799px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+.banner-text h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 54px;
+    line-height: 63px;
+    color: #513239;
+	   
+}
+
+.banner-text {
+    padding-right: 160px;
+}
+.browen-btn {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+    background-color: #BF8069;
+    border-radius: 12px;
+    padding: 7px 22px;
+    border: none;
+    margin: 40px 0;
+}
+.banner .carousel-indicators [data-bs-target] {
+    background: #513239;
+    border-radius: 50%;
+    width: 20px;
+    height: 0px;
+}
+/* .banner .carousel-indicators .active { */
+    /* background-color: #513239; */
+    /* height: 20px; */
+    /* width: 20px; */
+    /* border-radius: 50%; */
+/* } */
+
+.banner  .carousel-indicators {
+    bottom: 20px;
+}
+.banner .carousel-control-prev ,.banner .carousel-control-next {
+    display: none;
+}
+.video-play-btn {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 27% 0;
+    border-radius: 40px;
+}
+.video-play-btn a {
+    position: relative;
+}
+
+/******* Banner css end ********/
+
+/******* Bulid css start ********/
+
+.build-outer {
+    padding: 80px 0;
+}
+
+.build p {
+    max-width: 730px;
+    margin: 0px auto 50px;
+}
+.product-all-detail {
+    background-color: #fff;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    padding: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+.product-all-detail {
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 19px;
+    color: #828282;
+}
+.product-all-detail ul li {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #828282;
+}
+.product-all-detail li {
+    padding: 12px 18px;
+    margin: 14px 2px 20px 0px;
+}
+.product-all-detail li.active {
+    background: #F2F2F2;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin: 14px 2px 20px 0px;
+    color: #333333;
+}
+
+.add-btn {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+    background-color: #BF8069;
+    border-radius: 12px;
+    padding: 8px 22px;
+    border: none;
+    width: 100%;
+}
+.name li a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration-line: underline;
+    color: #513239;
+    padding: 0px 10px;
+    display: inline-block;
+    margin: 20px 0;
+    border-right: 1px solid #BDBDBD;
+}
+
+.name li:last-child a {
+    border: none;
+}
+.name li:first-child a {
+    padding-left: 0;
+}
+.three-product-color li {
+    margin: 10px 5px;
+    padding: 10px 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.three-product-color  li.active {
+ 
+    background: #E0E0E0;
+}
+
+.product-color li:first-child  {
+    margin-left: 0;
+}
+.price {
+    font-weight: 500;
+    line-height: 21px;
+    color: #513239;
+}
+.bluid-content-module {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #44222A;
+    padding-left: 20px;
+}
+.bluid-image-module img {
+    border-radius: 16px;
+    border: 1px solid #E0E0E0;
+    margin: 20px 0;
+    transition: 0.5s ease-all-out;
+    width: 100%;
+}
+
+.bluid-image-module:hover img {
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    box-shadow: -1px 5px 25px -8px rgb(81 50 57 / 38%);
+    border-radius: 16px;
+    transition: 0.5s ease-all-out;
+}
+
+.slider-second {
+    margin-top: 50px;
+}
+.product-description {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    font-weight: normal;
+}
+
+.build-outer .carousel-control-next-icon {
+    background-image: url(../images/right-arrow.png);
+    position: absolute;
+    top: -25px;
+    right: 5px;
+    background-size: 10px;	
+}
+.build-outer .carousel-control-prev-icon {
+    background-image: url(../images/right-arrow.png);
+    position: absolute;
+    top: -25px;
+    right: 15px;
+    background-size: 10px;transform: rotate(180deg);
+}
+.build-outer .carousel-control-prev {
+    right: 20px;
+    left: unset;
+}
+.build-outer .carousel-control-next,.build-outer .carousel-control-prev {
+    width: 2%;
+}
+.product-size img {
+    width: 100%;
+}
+/******* Bulid css start ********/
+
+/******* promise css start ********/
+.our-promise {
+    padding: 60px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.content-module h2 {
+    color: #513239;
+}
+.content-module p {
+    color: rgba(81, 50, 57, 0.75);
+}
+.content-module {
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 50px 50px;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -60%);
+    max-width: 720px;
+}
+/******* promise css end ********/
+
+
+/******* Product css start ********/
+.product {
+    padding: 70px 0;
+}
+.product-content-module h2 {
+    margin-bottom: 70px;
+}
+.product-content-module p {
+    font-weight: 500;
+    color: #513239;
+    padding: 20px 0;
+}
+
+/******* Product css end ********/
+
+/******* Two layout start ********/
+.two-layout {
+    padding: 40px 0;
+}
+.shop-btn {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    background-color: #BF8069;
+    border-radius: 10px;
+    padding: 7px 22px;
+    border: none;
+    margin: 20px 0;
+}
+.two-layout-image img {
+    width: 100%;
+    max-width: 658px;
+    border-radius: 20px;
+}
+.two-layout-content {
+    margin-top: 30px;
+}
+.two-layout-content-outer {
+    max-width: 480px;
+}
+.two-layout-content-outer img {
+    width: 318px;
+    height: 562px;
+}
+
+/******* Two layout css end ********/
+
+/******* Gram css end ********/
+.gram {
+    padding: 60px 0;
+}
+.gram-content-module h2 {
+    margin-bottom: 50px;
+}
+.gram-content-module img {
+    border-radius: 16px;
+    width: 100%;
+}
+
+.gram-hover:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(191, 128, 105, 0.85);
+    opacity: 0;
+    -webkit-transition: all 400ms ease-out;
+    -moz-transition: all 400ms ease-out;
+    -o-transition: all 400ms ease-out;
+    -ms-transition: all 400ms ease-out;
+    transition: all 400ms ease-out;
+	border-radius: 16px;
+}
+.insta img {
+    width: 30%;
+}
+
+.gram-hover-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    opacity: 0;
+    transition-delay: 0s;
+    transition-duration: 1s;
+}
+
+.gram-hover:hover:before {
+    opacity: 1;
+}
+.gram-hover:hover .gram-hover-inner {
+    opacity: 1;
+}
+.gram-hover p {
+    color: #fff;
+    font-size: 28px;
+    line-height: 33px;
+    margin: 10px 0;
+}
+
+/******* Gram layout css end ********/
+
+.top-footer {
+    border-top: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+    padding: 50px 0;
+}
+
+.ftr-box h4{
+    margin-bottom: 20px;
+}
+
+.ftr-box .ftr-link{
+font-size: 18px;
+line-height: 40px;
+color: #4F4F4F;
+    transition: 0.3s;
+}
+
+.ftr-box .social-links .ftr-link{
+    width: 38px;
+    height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #7F7F7F;
+    background-color: rgba(255, 255, 255, .1);
+	  border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.ftr-box .ftr-link:hover{
+    color: #888484;
+}
+.ftr-box .social-links .ftr-link:hover {
+    color: #fff;
+    background: #BF8069;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.ftr-box .social-links .ftr-item:not(:last-child){
+    margin-right: 4px;
+}
+
+
+.form-control {
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 8px 5px;
+    color: #010101;
+    font-size: 14px;
+	border: none;
+    border-bottom: 1px solid #E5E5E5;
+    
+}
+form.ftr-form img {
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+.footer-bottom {
+    padding: 22px 0;
+}
+
+.footer-bottom p {
+    color: #4F4F4F;
+    margin-bottom: 10px;
+}
+.first-footer {
+    width: 20%;
+}
+.second-footer {
+    width: 20%;
+}
+.third-footer {
+    width: 23%;
+}
+.fourth-footer {
+    width: 37%;
+}
+/* header style  New */
+.navbar-light.my-header .navbar-toggler-icon {
+    background-image: none;
+    height: auto;
+}
+.navbar-light.my-header .navbar-toggler {
+    border: none;
+}
+.my-header ul.navbar-nav.align-items-center {
+    width: 40%;
+}
+.my-header .d-flex.nav-right-btn {
+    width: 40%;
+    justify-content: flex-end;
+}
+
+.bluid-image-module-two .image-outer {
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 16px;
+    height: 300px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    transition: 0.5s ease-all-out;
+}
+.bluid-image-module-two:hover .image-outer {
+    box-shadow: -1px 5px 25px -8px rgb(81 50 57 / 38%);
+}
+
+/*************About Page css start here******************/
+
+/* About banner */
+.about-banner {
+    height: 620px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+/* About banner ends */
+
+/*About centered*/
+.center-content-section {
+    padding: 148px 0;
+    background-color: rgba(217, 205, 203, 0.5);
+}
+.about-content {
+    max-width: 1183px;
+    margin: 0 auto;
+    font-size: 32px;
+    line-height: 62px;
+    font-weight: 400;
+}
+/*About centered ends*/
+
+/*Leprive story*/
+.leprive-story {
+    padding: 156px 0 141px;
+}
+.leprive-story h2 {
+    font-weight: 400;
+}
+.leprive-story .content-module {
+    padding: 54px 71px 54px 59px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/*Leprive story ends*/
+
+/*Meet out people*/
+.meet-our-people {
+    background: rgba(217, 205, 203, 0.5);
+    padding: 112px 0 0px;
+    position: relative;
+}
+.meet-people-content p {
+    max-width: 686px;
+    margin: 0 auto;
+}
+.meet-people-content {
+    margin-bottom: 40px;
+}
+.meet-people-video {
+    max-width: 1102px;
+    margin: 0 auto;
+}
+.meet-our-people:before {
+    content: "";
+    width: 100%;
+    height: 370px;
+    background: #fff;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+}
+/*Meet out people ends*/
+
+/*Who we are*/
+.two-layout-img-left img {
+    border-radius: 25px;
+}
+.who-we-are {
+    padding: 145px 0 120px;
+}
+.who-we-are .two-layout-content {
+    margin-bottom: 59px;
+    padding-right: 3%;
+}
+.who-we-are .two-layout-content p {
+    color: rgba(81, 50, 57, 0.75);
+}
+.who-we-are .two-layout-image img {
+    max-width: 696px;
+}
+.two-layout-img-left img {
+    width: 100%;
+    max-width: 735px;
+}
+/*Who we are ends   */
+
+/*************About Page css ends here****************/
+
+
+
+/**************************************************
+ Responsive css start 
+ **************************************************/
+ @media(min-width:992px){
+.d-flex.nav-mob-icon li {
+    display: none;
+}
+ }
+
+@media(max-width:1366px){
+    header .nav-item {
+        padding: 22px 15px;
+    }
+    .about-content{
+        max-width: 915px;
+        margin: 0 auto;
+        font-size: 28px;
+        line-height: 50px;
+    }
+    .center-content-section{
+        padding: 60px 0;
+    }
+    .leprive-story .content-module{
+        transform: translate(-41%, -50%);
+    }
+    .leprive-story {
+    padding: 85px 0 85px;
+}
+.about-banner{
+    height: 444px;
+}
+.meet-people-video {
+    max-width: 870px;
+    }
+.meet-our-people:before{
+    height: 275px;
+}
+.meet-our-people{
+    padding: 65px 0 0px;
+}
+.who-we-are {
+    padding: 70px 0 80px;
+}
+.who-we-are .two-layout-content{
+    margin-bottom: 18px;
+}
+}
+
+@media(max-width:1280px){
+    h1, h2{
+        font-size: 48px;    
+    }
+
+    header .navbar-light .navbar-nav .nav-link {
+        font-size: 18px;
+        padding: 0;
+    }
+    header .navbar-logo {
+        width: 120px;
+    }
+    .banner-text {
+        padding-right: 40px;
+    }
+    .content-module {
+        padding: 30px 30px;
+        top: 60%;
+        left: 70%;
+        transform: translate(-60%, -70%);
+        max-width: 600px;
+    }
+    .about-banner {
+        height: 452px;
+    }
+    .leprive-story {
+    padding: 85px 0;
+}
+.leprive-story .content-module{
+    padding: 30px 30px;
+    transform: translate(-53%, -50%);
+}
+.meet-our-people{
+    padding: 65px 0 0px;
+}
+.meet-people-video {
+    max-width: 800px;
+}
+.meet-our-people:before{
+    height: 275px;
+}
+.who-we-are {
+    padding: 75px 0;
+}
+.who-we-are .two-layout-content{
+    margin-bottom: 22px;
+}
+}
+@media(max-width:1140px){
+
+    header .nav-item {
+        padding: 22px 14px;
+    }
+    header .navbar-light .navbar-nav .nav-link {
+        font-size: 16px;
+    }
+    header .navbar-logo {
+        width: 100px;
+    }
+    .about-banner {
+    height: 425px;
+}
+
+}
+
+@media(max-width:1024px){
+p {
+font-size: 16px;
+line-height: 24px !important;
+}
+h1,h2 {
+    font-size: 40px !important;
+	line-height: 44px !important;
+}
+h3 {
+    font-size: 32px;;
+}
+h4 {
+    font-size: 22px;
+}
+.browen-btn {
+    font-size: 16px;
+}
+.name li a {
+	padding: 0px 3px;
+    font-size: 14px;
+}
+.price {
+    font-size: 14px;
+}
+.product {
+    padding: 60px 0 30px 0;
+}
+.product-content-module h2 {
+    margin-bottom: 50px;
+}
+.about-banner{
+    height: 370px;
+}
+.center-content-section{
+    padding: 60px 0;
+}
+.about-content{
+    max-width: 728px;
+    font-size: 22px;
+    line-height: 40px;
+}
+.leprive-story {
+    padding: 75px 0;
+}
+.meet-people-video {
+    max-width: 800px;
+    }   
+    .meet-our-people{
+        padding: 55px 0 0px;
+    }
+    .meet-our-people:before{
+        height: 270px;
+    }
+    .who-we-are {
+    padding: 65px 0;
+}
+.who-we-are .two-layout-content {
+    margin-bottom: 20px;
+    padding-right: 0;
+}
+}
+
+@media(max-width:991px){
+.icon-left { display: none;}
+.nav-right-btn li:not(:first-child) { display: none;}
+header .nav-item { padding: 10px 14px;}
+.nav-right-btn{justify-content: center;}
+.nav-right-btn li {
+    padding: 10px 0 24px !important;
+}
+.myaccount a {
+    font-size: 16px;
+}
+header .navbar-nav {
+    padding: 15px 0 0 0;
+}
+.d-flex.nav-mob-icon li {
+    display: inline-block;
+    padding: 10px 10px;
+}
+header .navbar-light .navbar-brand {
+        max-width: 120px;
+        position: absolute;
+        left: 0;
+        top: 10px;
+        z-index: 9;
+        right: 0;
+        margin: 0 auto;
+}
+header .navbar-mob{
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 0;
+}
+header .navbar-collapse {
+    text-align: center;
+    background: #ECE6E5;
+}
+
+    header .nav-item{
+        background-image: none !important;
+    }
+.content-module {
+    top: 20%;
+    left: 0;
+    transform: translate(0%, -20%);
+    max-width: 600px;
+    position: unset;
+    width: 100%;
+    margin: 0 auto;
+}
+.my-header ul.navbar-nav.align-items-center {
+    width: 100%;
+}
+.my-header .d-flex.nav-right-btn {
+    width: 100%;
+    justify-content: center;
+}
+.about-banner{
+    height: 340px;
+}
+.about-content{
+    max-width: 670px;
+    font-size: 21px;
+    line-height: 40px;
+}
+.center-content-section{
+    padding: 50px 0;
+}
+.leprive-story .content-module {
+    padding: 30px 30px;
+    top: 20%;
+    transform: translate(0%, -20%);
+}
+.leprive-story {
+    padding: 60px 0 0;
+}
+.meet-our-people{
+    padding: 55px 0 0px;
+}
+.meet-people-content {
+    margin-bottom: 30px;
+}
+.meet-people-content p{
+    max-width: 625px;
+}
+.meet-people-video{
+    max-width: 660px;
+}
+.meet-our-people:before{
+    height: 230px;
+}
+.who-we-are {
+    padding: 40px 0 75px;
+}
+.who-we-are .two-layout-content {
+    margin-bottom: 20px;
+    padding-right: 2%;
+}
+.who-we-are {
+    padding: 35px 0 70px;
+}
+}
+@media(max-width:900px){
+.fourth-footer {order: 1;}
+.third-footer { order: 4;}
+.first-footer { order: 2;}
+.second-footer{ order: 3;}
+.top-footer { padding: 40px 0;}
+.first-footer,.second-footer,.third-footer,.fourth-footer { width: 100%;}
+.top-footer {text-align: center;}
+.ftr-box h4 { margin-bottom: 10px;}
+.ftr-box{margin-bottom: 30px;}
+.third-footer .ftr-box { margin-bottom: 0;}	
+.ftr-form.position-relative {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+}
+}
+@media(max-width:767px){
+p {
+font-size: 16px;
+}
+h1,h2 {
+    font-size: 28px !important;
+	line-height: 38px !important;
+}
+
+h3 {
+    font-size: 28px;;
+}
+h4 {
+    font-size: 20px;
+}
+
+.banner .row {  flex-direction: column-reverse;}
+.banner-main { padding: 50px 0; max-height: 850px;}
+.banner-text {
+    padding-right: 0;
+    text-align: center;
+    margin-top: 30px;
+}
+.build p {max-width: 100%; margin: 0px auto 30px;}
+.browen-btn {  margin: 20px 0 30px 0;}
+.product-all-detail {
+    padding: 25px 20px 7px 20px;
+	bottom: 16px;
+    right: 16px;
+}
+.our-promise {background-position: top;}
+.add-btn { display: none;}
+.name li a {  padding: 0px 10px; font-size: 16px;}
+.our-promise {  padding: 10px 0;}
+.content-module {
+    top: 10%;
+    left: 0;   
+	transform: translate(0%, -10%);
+    max-width: 550px;
+    margin: 0 auto;
+}
+.product {  padding: 30px 0;}
+.product-content-module h2 {  margin-bottom: 10px;}
+.product-content-module img {  margin-top: 30px;}
+.product-content-module p {  padding: 10px 0 0 0;}
+.two-layout {  padding: 10px 0;}
+.two-layout-content-outer { max-width: 100%; margin-top: 40px;}
+.two-layout-content {  margin-top: 30px; text-align: center;}
+.gram { padding: 20px 0;}
+.gram-content-module h2 {  margin-bottom: 10px;}
+.gram-outer {  margin: 10px 0;}
+.shop-btn {
+    font-size: 16px;
+}
+.about-banner {
+    height: 300px;
+}
+.center-content-section{
+    padding: 45px 0;
+}
+.about-content{
+    font-size: 19px;
+    line-height: 34px;
+    max-width: 600px;
+}
+.leprive-story .content-module{
+    top: 10%;
+    transform: translate(0%, -10%); 
+    padding: 30px 30px;
+}
+.leprive-story {
+    padding-top: 60px;
+    padding-bottom: 0;
+}
+.meet-people-content {
+    margin-bottom: 20px;
+}
+.meet-our-people{
+    padding: 50px 0 0px;
+}
+.meet-our-people:before{
+    height: 180px;
+}
+.meet-people-content p{
+    max-width: 479px;
+}
+.meet-people-video{
+    max-width: 530px;
+}
+.who-we-are .two-layout-content{
+    padding-right: 0;
+}
+.who-we-are .two-layout-content{
+    margin-bottom: 22px;
+}
+.who-we-are .two-layout-img-left {
+    margin-bottom: 25px;
+}
+.who-we-are {
+    margin-bottom: 20px;
+}
+.who-we-are .two-layout-image img {
+    max-width: 100%;
+}
+}
+@media(max-width:667px){
+.top-bar {
+    font-size: 10px;
+    padding: 7px 0;
+}
+header .navbar-light .navbar-brand {
+    top: 5px;
+}
+.bluid-content-module {
+    padding-left: 0;
+}
+.our-promise.position-relative .content-module.d-lg-text-center {
+    max-width: 90%;
+        text-align: center;
+}
+.banner .carousel-indicators [data-bs-target] {
+    background: #513239;
+    border-radius: 50%;
+    width: 7px;
+    height: 0px;
+    margin-right: 2px;
+    margin-left: 2px;
+    border-top: 3.5px solid transparent;
+    border-bottom: 3.5px solid transparent;
+}
+.build-outer {
+    padding: 45px 0;
+}
+}
+@media(max-width:560px){
+.content-module {
+    max-width: 400px;
+}
+.navbar-light.my-header .navbar-toggler {
+    padding: 0;
+}
+.about-banner{
+    height: 245px !important;
+}
+.about-content{
+    font-size: 17px;
+    line-height: 29px;
+}
+.center-content-section{
+    padding: 40px 0;
+}
+.leprive-story{
+    padding-top: 50px;
+}
+.meet-our-people{
+    padding: 40px 0 0px;
+}
+.meet-our-people:before{
+    height: 180px;  
+}
+.meet-people-content p{
+        max-width: 444px;
+}
+.meet-people-video{
+    max-width: 450px;
+}
+}
+@media(max-width:420px){
+.d-flex.nav-mob-icon li {
+    padding: 5px 5px;
+        max-width: 30px;
+}
+.about-banner{
+    height: 230px !important;
+}
+}
+@media(max-width:360px){
+.name li a { padding: 0px 3px; font-size: 14px;}
+.content-module {  max-width: 260px;;}
+.about-banner{
+    height: 210px !important;
+}
+}
+
